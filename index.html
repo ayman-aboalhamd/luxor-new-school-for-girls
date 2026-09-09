@@ -46,6 +46,7 @@
     width:280px; height:280px;
     border:1px solid rgba(246,242,233,.14);
     border-radius:50%;
+    pointer-events:none;
   }
   .hero::before{
     content:"";
@@ -54,8 +55,9 @@
     width:220px; height:220px;
     border:1px solid rgba(246,242,233,.1);
     border-radius:50%;
+    pointer-events:none;
   }
-  .hero-inner{max-width:640px;margin:0 auto;position:relative;}
+  .hero-inner{max-width:640px;margin:0 auto;position:relative;z-index:2;}
   .eyebrow{
     font-family:'Cairo',sans-serif;
     font-size:14px;
