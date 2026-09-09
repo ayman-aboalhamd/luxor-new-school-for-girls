@@ -104,6 +104,23 @@
     margin:0 0 10px;
   }
 
+  .disclaimer-banner{
+    max-width:480px;
+    margin:14px auto 0;
+    background:#FCEFD8;
+    border:1.5px solid var(--brass);
+    color:#7A4A12;
+    border-radius:10px;
+    padding:12px 18px;
+    font-family:'Cairo',sans-serif;
+    font-weight:700;
+    font-size:13px;
+    text-align:center;
+    line-height:1.6;
+    position:relative;
+    z-index:1;
+  }
+
   .quick-links{
     margin-top:4px;
     display:flex;
@@ -114,19 +131,45 @@
     display:flex;
     align-items:center;
     justify-content:space-between;
-    padding:13px 16px;
+    padding:14px 18px;
     background:#FCFAF4;
     border:1px solid var(--line);
+    border-right:5px solid var(--line);
     border-radius:10px;
     color:var(--teal-deep);
     text-decoration:none;
     font-family:'Cairo',sans-serif;
-    font-weight:600;
-    font-size:14px;
-    transition:border-color .15s, background .15s;
+    font-weight:700;
+    font-size:14.5px;
+    transition:border-color .15s, background .15s, transform .15s;
   }
-  .quick-links a:hover{border-color:var(--teal);background:#F3F0E4;}
+  .quick-links a:hover{transform:translateY(-1px);}
   .quick-links a .arrow{color:var(--brass);font-size:18px;}
+
+  /* جداول المعلمين - أخضر مينت هادي */
+  .quick-links a:nth-child(1){background:#EAF4F1;border-color:#CFE6DF;border-right-color:#2F7A6E;}
+  .quick-links a:nth-child(1):hover{background:#DFEEE8;}
+  .quick-links a:nth-child(1) .arrow{color:#2F7A6E;}
+
+  /* جداول الفصول - أزرق سماوي هادي */
+  .quick-links a:nth-child(2){background:#EAF1F8;border-color:#D0E1EF;border-right-color:#3E6EA5;}
+  .quick-links a:nth-child(2):hover{background:#DEEAF5;}
+  .quick-links a:nth-child(2) .arrow{color:#3E6EA5;}
+
+  /* الجدول العام للمعلمين - ذهبي دافئ */
+  .quick-links a:nth-child(3){background:#FBF1DC;border-color:#F0DFB6;border-right-color:var(--brass);}
+  .quick-links a:nth-child(3):hover{background:#F8E9C8;}
+  .quick-links a:nth-child(3) .arrow{color:var(--brass);}
+
+  /* جدول الإشراف اليومي - تراكوتا دافئ */
+  .quick-links a:nth-child(4){background:#FBEAE2;border-color:#F0CFC0;border-right-color:#C1694F;}
+  .quick-links a:nth-child(4):hover{background:#F7DED2;}
+  .quick-links a:nth-child(4) .arrow{color:#C1694F;}
+
+  /* الجدول العام - أخضر زيتوني هادي */
+  .quick-links a:nth-child(5){background:#EFF3E3;border-color:#DCE6C4;border-right-color:#7C8F4C;}
+  .quick-links a:nth-child(5):hover{background:#E5ECD3;}
+  .quick-links a:nth-child(5) .arrow{color:#7C8F4C;}
 
   footer{
     text-align:center;
@@ -199,6 +242,7 @@
     <p class="eyebrow">النظام الإلكتروني للجداول</p>
     <h1 class="school-name">مدرسة الأقصر الإعدادية بنات الجديدة</h1>
     <p class="hero-sub">اختر من هنا الجدول اللي محتاجه</p>
+    <p class="disclaimer-banner">⚠ المعلومات المعروضة في هذه الصفحة استرشادية فقط، ولا تتحمّل المدرسة أي مسؤولية عن أي خطأ أو تعارض بها.</p>
   </div>
 </div>
 
@@ -206,11 +250,11 @@
   <div class="card">
     <p class="card-label">اختر الصفحة</p>
     <div class="quick-links">
-      <a href="general_table.html">الجدول العام <span class="arrow">←</span></a>
-      <a href="general_teachers.html">الجدول العام للمعلمين <span class="arrow">←</span></a>
-      <a href="supervisor.html">جدول الإشراف اليومي <span class="arrow">←</span></a>
       <a href="teachers.html">جداول المعلمين <span class="arrow">←</span></a>
       <a href="classes.html">جداول الفصول <span class="arrow">←</span></a>
+      <a href="general_teachers.html">الجدول العام للمعلمين <span class="arrow">←</span></a>
+      <a href="supervisor.html">جدول الإشراف اليومي <span class="arrow">←</span></a>
+      <a href="general_table.html">الجدول العام <span class="arrow">←</span></a>
     </div>
   </div>
 </main>
