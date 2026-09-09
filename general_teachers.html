@@ -12,8 +12,8 @@
     --ink:#1B2E33;
     --paper:#F6F2E9;
     --panel:#FFFFFF;
-    --teal:#1F4B4C;
-    --teal-deep:#153435;
+    --teal:#2E6360;
+    --teal-deep:#234845;
     --brass:#B8863B;
     --brass-soft:#EADFC5;
     --line:#DED4BE;
@@ -53,16 +53,22 @@
   }
   .topbar-inner{max-width:1400px;margin:0 auto;position:relative;}
   .home-link{
-    display:block;
-    text-align:right;
+    display:inline-flex;
+    align-items:center;
+    gap:6px;
     margin:0 0 16px;
-    color:var(--brass-soft);
+    background:var(--brass-soft);
+    color:var(--teal-deep);
     font-family:'Cairo',sans-serif;
     font-weight:700;
-    font-size:16px;
+    font-size:14px;
     text-decoration:none;
+    padding:8px 16px;
+    border-radius:999px;
+    box-shadow:0 4px 10px rgba(21,52,53,.18);
+    transition:background .15s, transform .15s;
   }
-  .home-link:hover{color:#fff;text-decoration:underline;}
+  .home-link:hover{background:#fff;transform:translateY(-1px);}
   .eyebrow{
     font-family:'Cairo',sans-serif;
     font-size:13px;
